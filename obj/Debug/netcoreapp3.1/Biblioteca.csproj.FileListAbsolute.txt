@@ -102,3 +102,6 @@ C:\Users\Reyson Afonso\Documents\Projetos asp.net core mvc\Biblioteca\obj\Debug\
 C:\Users\Reyson Afonso\Documents\Projetos asp.net core mvc\Biblioteca\obj\Debug\netcoreapp3.1\staticwebassets\Biblioteca.StaticWebAssets.xml
 C:\Users\Reyson Afonso\Documents\Projetos asp.net core mvc\Biblioteca\obj\Debug\netcoreapp3.1\Biblioteca.dll
 C:\Users\Reyson Afonso\Documents\Projetos asp.net core mvc\Biblioteca\obj\Debug\netcoreapp3.1\Biblioteca.pdb
+C:\Users\Reyson Afonso\Documents\Projetos asp.net core mvc\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuarios\Cadastro.cshtml.g.cs
+C:\Users\Reyson Afonso\Documents\Projetos asp.net core mvc\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuarios\Edicao.cshtml.g.cs
+C:\Users\Reyson Afonso\Documents\Projetos asp.net core mvc\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuarios\Listagem.cshtml.g.cs
