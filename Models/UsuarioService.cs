@@ -43,8 +43,12 @@ namespace Biblioteca.Models
                             query = bc.Usuarios.Where(u => u.Nome.Contains(filtro.Filtro));
                         break;
 
-                        case "Perfil":
-                            query = bc.Usuarios.Where(u => u.Perfil.Contains(filtro.Filtro));
+                        case "Administradores":
+                            query = bc.Usuarios.Where(u => u.Perfil.Equals(filtro.Filtro));
+                        break;
+
+                        case "Usuarios":
+                            query = bc.Usuarios.Where(u => u.Perfil.Equals(filtro.Filtro));
                         break;
 
                         default:

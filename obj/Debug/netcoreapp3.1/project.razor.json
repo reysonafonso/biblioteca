@@ -20606,6 +20606,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Reyson Afonso\\Documents\\Projetos asp.net core mvc\\Biblioteca\\Views\\Usuarios\\_FormCadastro.cshtml",
+      "TargetPath": "Views\\Usuarios\\_FormCadastro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Reyson Afonso\\Documents\\Projetos asp.net core mvc\\Biblioteca\\Views\\Livro\\_FormCadastro.cshtml",
       "TargetPath": "Views\\Livro\\_FormCadastro.cshtml",
       "FileKind": "mvc"
