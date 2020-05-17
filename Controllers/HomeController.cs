@@ -38,15 +38,20 @@ namespace Biblioteca.Controllers
             string senhaEnc = us.encryption(senha);
 
             System.Console.WriteLine(senhaEnc);
-            
+
             if(!(us.Login(login, senhaEnc)))
             {
                 ViewData["Erro"] = "Senha inválida";
                 return View();
             }
-            else
+            else if(login == "admin")
             {
                 HttpContext.Session.SetString("user", "admin");
+                return RedirectToAction("Listagem", "Usuario");
+            }
+            else 
+            {
+                HttpContext.Session.SetString("user", login);
                 return RedirectToAction("Index");
             }
         }
