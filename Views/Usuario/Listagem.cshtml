@@ -40,7 +40,7 @@
                     <td>@u.Id</td>
                     <td>@u.Nome</td>
                     <td>@u.Telefone</td>
-                    <td>@(u.Perfil > 0 ?  "Administrador" : "Usuário")</td>
+                    <td>@(u.Perfil == 1 ?  "Administrador" : "Usuário")</td>
                     <td><a href="/Usuario/Edicao/@u.Id">Editar</a></td>
                 </tr>
                 }

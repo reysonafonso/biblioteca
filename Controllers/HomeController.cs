@@ -33,7 +33,13 @@ namespace Biblioteca.Controllers
         [HttpPost]
         public IActionResult Login(string login, string senha)
         {
-            if(login != "admin" || senha != "123")
+            UsuarioService us = new UsuarioService();
+
+            string senhaEnc = us.encryption(senha);
+
+            System.Console.WriteLine(senhaEnc);
+            
+            if(!(us.Login(login, senhaEnc)))
             {
                 ViewData["Erro"] = "Senha inválida";
                 return View();

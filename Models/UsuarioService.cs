@@ -1,5 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace Biblioteca.Models
 {
@@ -9,6 +12,7 @@ namespace Biblioteca.Models
         {
             using(BibliotecaContext bc = new BibliotecaContext())
             {
+                u.Senha = encryption(u.Senha);
                 bc.Usuarios.Add(u);
                 bc.SaveChanges();
             }
@@ -19,6 +23,7 @@ namespace Biblioteca.Models
             using(BibliotecaContext bc = new BibliotecaContext())
             {
                 Usuario usuario = bc.Usuarios.Find(u.Id);
+                usuario.Login = u.Login;
                 usuario.Nome = u.Nome;
                 usuario.Telefone = u.Telefone;
                 usuario.Senha = u.Senha;
@@ -43,12 +48,12 @@ namespace Biblioteca.Models
                             query = bc.Usuarios.Where(u => u.Nome.Contains(filtro.Filtro));
                         break;
 
-                        case "Administradores":
-                            query = bc.Usuarios.Where(u => u.Perfil.Equals(filtro.Filtro));
+                        case "1":
+                            query = bc.Usuarios.Where(u => u.Perfil.Equals(Convert.ToInt32(filtro.Filtro)));
                         break;
 
-                        case "Usuarios":
-                            query = bc.Usuarios.Where(u => u.Perfil.Equals(filtro.Filtro));
+                        case "2":
+                            query = bc.Usuarios.Where(u => u.Perfil.Equals(Convert.ToInt32(filtro.Filtro)));
                         break;
 
                         default:
@@ -73,5 +78,30 @@ namespace Biblioteca.Models
                 return bc.Usuarios.Find(id);
             }
         }
+
+
+        public bool Login(string login, string senha)
+        {
+            using(BibliotecaContext bc = new BibliotecaContext())
+            {
+                return bc.Usuarios.Any(u => u.Login == login &&  u.Senha == senha);
+            }
+        }
+
+        public string encryption(String password)  
+        {  
+            MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();  
+            byte[] encrypt;  
+            UTF8Encoding encode = new UTF8Encoding();  
+            //encrypt the given password string into Encrypted data  
+            encrypt = md5.ComputeHash(encode.GetBytes(password));  
+            StringBuilder encryptdata = new StringBuilder();  
+            //Create a new string by using the encrypted data  
+            for (int i = 0; i < encrypt.Length; i++)  
+            {  
+                encryptdata.Append(encrypt[i].ToString());  
+            }  
+            return encryptdata.ToString();  
+        } 
     }
 }
