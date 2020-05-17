@@ -14,9 +14,11 @@ namespace Biblioteca.Controllers
             Autenticacao.CheckLogin(this);
             LivroService livroService = new LivroService();
             EmprestimoService emprestimoService = new EmprestimoService();
+            UsuarioService usuarioService = new UsuarioService();
 
             CadEmprestimoViewModel cadModel = new CadEmprestimoViewModel();
             cadModel.Livros = livroService.ListarDisponiveis();
+            cadModel.Usuarios = usuarioService.ListarTodos();
             return View(cadModel);
         }
 
@@ -55,11 +57,15 @@ namespace Biblioteca.Controllers
             Autenticacao.CheckLogin(this);
             LivroService livroService = new LivroService();
             EmprestimoService em = new EmprestimoService();
+            UsuarioService ur = new UsuarioService();
+
             Emprestimo e = em.ObterPorId(id);
+            Usuario u = ur.ObterPorId(e.UsuarioId);
 
             CadEmprestimoViewModel cadModel = new CadEmprestimoViewModel();
             cadModel.Livros = livroService.ListarDisponiveis();
             cadModel.Emprestimo = e;
+            cadModel.Emprestimo.Usuario = u;
             
             return View(cadModel);
         }

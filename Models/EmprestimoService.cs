@@ -20,7 +20,7 @@ namespace Biblioteca.Models
             using(BibliotecaContext bc = new BibliotecaContext())
             {
                 Emprestimo emprestimo = bc.Emprestimos.Find(e.Id);
-                emprestimo.Usuario.Nome = e.Usuario.Nome;
+                emprestimo.UsuarioId = e.UsuarioId;
                 emprestimo.Usuario.Telefone = e.Usuario.Telefone;
                 emprestimo.LivroId = e.LivroId;
                 emprestimo.DataEmprestimo = e.DataEmprestimo;
