@@ -20526,6 +20526,21 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Reyson Afonso\\Documents\\Projetos asp.net core mvc\\Biblioteca\\Views\\Usuario\\Cadastro.cshtml",
+      "TargetPath": "Views\\Usuario\\Cadastro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Reyson Afonso\\Documents\\Projetos asp.net core mvc\\Biblioteca\\Views\\Usuario\\Edicao.cshtml",
+      "TargetPath": "Views\\Usuario\\Edicao.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Reyson Afonso\\Documents\\Projetos asp.net core mvc\\Biblioteca\\Views\\Usuario\\Listagem.cshtml",
+      "TargetPath": "Views\\Usuario\\Listagem.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Reyson Afonso\\Documents\\Projetos asp.net core mvc\\Biblioteca\\Views\\Emprestimo\\Edicao.cshtml",
       "TargetPath": "Views\\Emprestimo\\Edicao.cshtml",
       "FileKind": "mvc"
@@ -20546,8 +20561,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Reyson Afonso\\Documents\\Projetos asp.net core mvc\\Biblioteca\\Views\\Usuarios\\Cadastro.cshtml",
-      "TargetPath": "Views\\Usuarios\\Cadastro.cshtml",
+      "FilePath": "c:\\Users\\Reyson Afonso\\Documents\\Projetos asp.net core mvc\\Biblioteca\\Views\\Usuario\\_FormCadastro.cshtml",
+      "TargetPath": "Views\\Usuario\\_FormCadastro.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20563,11 +20578,6 @@
     {
       "FilePath": "c:\\Users\\Reyson Afonso\\Documents\\Projetos asp.net core mvc\\Biblioteca\\Views\\Emprestimo\\Listagem.cshtml",
       "TargetPath": "Views\\Emprestimo\\Listagem.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Reyson Afonso\\Documents\\Projetos asp.net core mvc\\Biblioteca\\Views\\Usuarios\\Listagem.cshtml",
-      "TargetPath": "Views\\Usuarios\\Listagem.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20598,16 +20608,6 @@
     {
       "FilePath": "c:\\Users\\Reyson Afonso\\Documents\\Projetos asp.net core mvc\\Biblioteca\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Reyson Afonso\\Documents\\Projetos asp.net core mvc\\Biblioteca\\Views\\Usuarios\\Edicao.cshtml",
-      "TargetPath": "Views\\Usuarios\\Edicao.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Reyson Afonso\\Documents\\Projetos asp.net core mvc\\Biblioteca\\Views\\Usuarios\\_FormCadastro.cshtml",
-      "TargetPath": "Views\\Usuarios\\_FormCadastro.cshtml",
       "FileKind": "mvc"
     },
     {
